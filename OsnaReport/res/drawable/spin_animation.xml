@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/selected" 
+    android:oneshot="false">
+    <item android:drawable="@drawable/spinner_20_inner_holo1" android:duration="150" />
+    <item android:drawable="@drawable/spinner_20_inner_holo2" android:duration="150" />
+    <item android:drawable="@drawable/spinner_20_inner_holo3" android:duration="150" />
+    <item android:drawable="@drawable/spinner_20_inner_holo4" android:duration="150" />
+    <item android:drawable="@drawable/spinner_20_inner_holo5" android:duration="150" />
+    <item android:drawable="@drawable/spinner_20_inner_holo6" android:duration="150" />
+ </animation-list>

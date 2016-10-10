@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_relativelayout"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:background="#323331"
+    android:lines="2" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="3dp"
+        android:text="@string/map_title_textview1"
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:contentDescription="@string/map_title_image_description1"
+        android:src="@drawable/ic_mark_location" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:gravity="center_horizontal"
+        android:text="@string/map_title_textview2"
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:gravity="center_horizontal"
+        android:text="@string/map_title_textview3"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:contentDescription="@string/map_title_image_description2"
+        android:gravity="center_horizontal"
+        android:src="@drawable/ic_menu_forward" />
+
+</RelativeLayout>

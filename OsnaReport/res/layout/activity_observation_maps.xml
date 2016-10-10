@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0" >
+
+    <TextView
+        android:id="@+id/observation_activity_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/observation_activity_step"
+        android:textColor="#0000ef"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/observation_activity_whathappened"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/observation_activity_step"
+        android:layout_below="@+id/observation_activity_step"
+        android:text="@string/observation_activity_explanation"
+        android:textColor="#0000ef"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/observation_activity_button_mapview"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent" />
+
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/observation_activity_mapview"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:apiKey="0f4N32Ki72qWFGSYbu5J2OkGnQlzpfKu5Tydibg" >
+    </com.google.android.maps.MapView>
+
+    <EditText
+        android:id="@+id/observation_activity_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/observation_activity_step"
+        android:layout_below="@+id/observation_activity_whathappened"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="@string/observation_activity_edittext_hint"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/observation_activity_textview_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/observation_activity_edittext"
+        android:layout_below="@+id/observation_activity_edittext"
+        android:layout_marginTop="15dp"
+        android:text="@string/observation_activity_category"
+        android:textColor="#0000ef"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/observation_activity_spinner_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/observation_activity_edittext"
+        android:layout_below="@+id/observation_activity_textview_category"
+        android:layout_marginTop="1dp"
+        android:prompt="@string/observation_activity_spinner_cat_title" />
+
+    <TextView
+        android:id="@+id/observation_activity_textview_urgency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/observation_activity_edittext"
+        android:layout_below="@+id/observation_activity_spinner_category"
+        android:layout_marginTop="10dp"
+        android:text="@string/observation_activity_urgency"
+        android:textColor="#0000ef"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/observation_activity_spinner_urgency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/observation_activity_edittext"
+        android:layout_below="@+id/observation_activity_textview_urgency"
+        android:layout_marginTop="1dp"
+        android:prompt="@string/observation_activity_spinner_urg_title" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:indeterminate="false"
+        android:maxHeight="18dip"
+        android:minHeight="18dip"
+        android:progress="66"
+        android:progressDrawable="@drawable/greenprogress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/observation_activity_progress"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

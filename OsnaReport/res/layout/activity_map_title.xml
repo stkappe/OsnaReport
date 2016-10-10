@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:background="#323331"
+    android:gravity="left"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/maps_activity_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:background="#323331"
+        android:drawableLeft="@drawable/ic_menu_back"
+        android:gravity="left|center_vertical"
+        android:text="@string/map_activity_title"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/maps_activity_button_mark_location"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/maps_activity_button_gps"
+        android:background="#323331"
+        android:drawableLeft="@drawable/ic_mark_location"
+        android:gravity="left|center_vertical" />
+
+    <Button
+        android:id="@+id/maps_activity_button_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/maps_activity_button_continue"
+        android:background="#323331"
+        android:drawableLeft="@drawable/ic_menu_mylocation"
+        android:gravity="left|center_vertical" />
+
+    <Button
+        android:id="@+id/maps_activity_button_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#323331"
+        android:drawableLeft="@drawable/ic_menu_forward"
+        android:gravity="left|center_vertical" />
+
+</RelativeLayout>

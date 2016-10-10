@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <ImageView
+        android:id="@+id/person_activity_alert_image_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/person_alert_image_description2"
+        android:src="@drawable/ic_error" />
+
+    <TextView
+        android:id="@+id/person_activity_alert_texterror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/person_activity_alert_image_error"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/person_activity_alert_image_error"
+        android:text="@string/person_activity_alert_texterror"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/person_activity_alert_texterrormessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_activity_alert_image_error"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

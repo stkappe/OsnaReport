@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0" >
+
+    <TextView
+        android:id="@+id/title_activity_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/title_activity_title"
+        android:textColor="#0000ef"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/title_activity_image_exclmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_activity_textview1"
+        android:layout_marginTop="65dp"
+        android:contentDescription="@string/title_image_exclmark"
+        android:gravity="left"
+        android:paddingLeft="5dp"
+        android:src="@drawable/exclamationmark" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/title_activity_button_continue_exclmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/title_activity_image_exclmark"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/title_activity_image_exclmark"
+        android:background="#f0f0f0"
+        android:gravity="left|center_vertical"
+        android:text="@string/title_activity_report"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/title_activity_image_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_activity_image_exclmark"
+        android:layout_marginTop="65dp"
+        android:contentDescription="@string/title_image_info"
+        android:gravity="left"
+        android:paddingLeft="5dp"
+        android:src="@drawable/ic_dialog_info" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/title_activity_button_continue_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/title_activity_image_info"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/title_activity_image_info"
+        android:background="#f0f0f0"
+        android:gravity="left|center_vertical"
+        android:text="@string/title_activity_info"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<resources>
+
+    <string name="app_name">OsnaReport</string>
+    <string name="app_description">Verwenden Sie diese App, um kleinere Ordnungsangelegenheiten,
+        z.B. eine ausgefallene Strassenlaterne, oder eine ueberwucherte oefftl. Gruenflaeche zu melden</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_title">OsnaReport</string>
+    <string name="title_activity_report">Beobachtetes Ereignis übermitteln</string>
+    <string name="title_activity_info">Über diese App</string>
+    <string name="title_image_exclmark">Image containing exclamation.</string>
+    <string name="title_image_info">Image conaining an information symbol.</string>
+    <string name="info_activity_title">Informationen</string>
+    <string name="info_activity_description">Beschreibung:</string>
+    <string name="info_activity_description_text">Mit dieser App können Sie einen Beitrag für eine lebenswertere Stadt leisten.
+        Sie können Auffälligkeiten in Ihrer Umgebung, beispielsweise eine ausgefallene
+        Straßenlaterne, ein Schlagloch oder eine überwucherte öffentliche Grünfläche melden. Der zuständige Sachbearbeiter der Stadt kümmert sich
+        anschließend um Ihr Anliegen und wird den Auftrag geben, die beschriebene Situation zu verbessern.</string>
+    <string name="info_activity_sources">Quellen der verwendeten Ressoucen:</string>
+    <string name="info_activity_sources_text">Kartenmaterial: Google Maps, Google Inc.\n\nStecknadel Icon: 
+        Stecknadel 66mm, Staufen GmbH &amp; Co. KG\n\nSymbol dieser App: http://www.slideshine.de/32827/0238-Warnschild.jpg?\n\nAusrufungszeichen Icon: 
+        http://sechsteraugust.net/post.php\n\nsonstige Symbole aus: Android Ressourcen, Pfad: Android/android-sdk/platforms/android-X/data/res/drawable-Xdpi</string>
+    <string name="chooseinput_activity_title">Ortsangabe</string>
+    <string name="chooseinput_activity_question">Auf welche Weise möchten Sie den Ort Ihrer Beobachtung angeben?</string>
+    <string name="chooseinput_activity_adress">Eingabe einer Adresse</string>
+    <string name="chooseinput_activity_map">Auswahl des Ortes auf einer Karte</string>
+    <string name="chooseinput_activity_alert_info">Sie haben etwas im Stadtbild entdeckt, das
+        einer Verbesserung bedarf? Bevor Sie diese Situation beschreiben, geben Sie den dazugehörigen Ort an.
+        Auf welche Weise möchten Sie den Ort angeben?</string>
+    <string name="chooseinput_progress">Fortschritt: 0/3</string>
+    <string name="map_activity_title">Ortsangabe</string>
+    <string name="map_title_textview1">Mit</string>
+    <string name="map_title_textview2"> einen Ort markieren, </string>
+    <string name="map_title_textview3">dann weiter </string>
+    <string name="map_title_image_description1">Symbol, um einen Ort zu markieren</string>
+    <string name="map_title_image_description2">Symbol, um zur naechsten Bildschirmseite zu wechseln</string>
+    <string name="map_alert_textview1">Tippen Sie auf das Positionssymbol </string>
+    <string name="map_alert_textview2">und markieren Sie anschließend den Ort des Geschehens durch Antippen der Karte.</string>
+    <string name="map_alert_textview3">Verwenden Sie</string>
+    <string name="map_alert_textview4"> ,um die aktuelle Position</string>
+    <string name="map_alert_textview5">per GPS zu bestimmen, falls ihr Gerät dies unterstützt. Nach Antippen des Symbols dauert dies einige Augenblicke.</string>
+    <string name="map_alert_textview6">Verwenden Sie </string>
+    <string name="map_alert_textview7">, um zu bestätigen.</string>
+    <string name="map_alert_image_description1">Symbol, die GPS-Ortsbestimmung zu aktivieren</string>
+    <string name="adress_activity_title">Ortsbezeichnung eingeben</string>
+    <string name="adress_activity_step">Schritt 1:</string>
+    <string name="adress_activity_explanation">Nahe welcher Adresse befindet sich der Ort des Geschehens?</string>
+    <string name="adress_activity_adress">Straße, Hausnr.:</string>
+    <string name="adress_activity_comment">Bemerkung:</string>
+    <string name="adress_activity_progress">Fortschritt: 1/3</string>
+    <string name="adress_activity_citypart">OS, Stadtteil:</string>
+    <string name="observation_activity_title">Beobachtung</string>
+    <string name="observation_activity_step">Schritt 2:</string>
+    <string name="observation_activity_explanation">Was ist passiert?</string>
+    <string name="observation_activity_spinner_cat_title">Kategorie:</string>
+    <string name="observation_activity_spinner_urg_title">Wie akut bedarf das Anliegen einer Lösung?</string>
+    <string name="observation_activity_edittext_hint">Beschreibung</string>
+    <string name="observation_activity_category">Kategorie:</string>
+    <string name="observation_activity_urgency">Dringlichkeit:</string>
+    <string name="observation_activity_progress">Fortschritt: 2/3</string>
+    <string name="person_activity_title">persönliche Angaben</string>
+    <string name="person_activity_step">Schritt 3:</string>
+    <string name="person_activity_explanation">Wie können wir Sie für Nachfragen erreichen? (Optional)</string>
+    <string name="person_activity_alert_textwaiting">Sende Anfrage, bitte warten...</string>
+    <string name="person_activity_alert_textdone">Anfrage erfolgreich übermittelt</string>
+    <string name="person_activity_alert_texterror">Fehler! Anfrage konnte nicht übermittelt werden.</string>
+    <string name="person_activity_name">Name:</string>
+    <string name="person_activity_adress">Adresse:</string>
+    <string name="person_activity_telephonenr">Telefonnr.:</string>
+    <string name="person_activity_proceed">Abschließen</string>
+    <string name="person_activity_progress">Fortschritt: 3/3</string>
+    <string name="person_alert_image_description1">Übertragung erfolgreich</string>
+    <string name="person_alert_image_description2">Übertragung nicht erfolgreich</string>
+    <string name="person_alert_image_description3">Im Begriff, die Daten zu übertragen</string>
+
+    <string-array name="spinner_category_data">
+        <item>Straße/Bürgersteig</item>
+        <item>Ampelanlagen</item>
+        <item>öfftl. Grünflächen</item>
+        <item>öfftl. Abfallentsorgung</item>
+        <item>öfftl. Einrichtungen</item>
+        <item>ÖPNV</item>
+        <item>Sonstiges</item>
+    </string-array>
+    <string-array name="spinner_urgency_data">
+        <item>Innerhalb eines Tages</item>
+        <item>Innerhalb einer Woche</item>
+        <item>anderer Zeitpunkt</item>
+    </string-array>
+
+</resources>

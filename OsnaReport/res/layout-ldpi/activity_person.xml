@@ -1,0 +1,143 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="#f0f0f0"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/person_activity_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/person_activity_step"
+            android:textColor="#0000ef"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/person_activity_explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/person_activity_step"
+            android:layout_below="@+id/person_activity_step"
+            android:text="@string/person_activity_explanation"
+            android:textColor="#0000ef"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/person_activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/person_activity_explanation"
+            android:layout_below="@+id/person_activity_explanation"
+            android:layout_marginTop="48dp"
+            android:text="@string/person_activity_name"
+            android:textColor="#0000ef"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/person_activity_edittext_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/person_activity_name"
+            android:layout_alignBottom="@+id/person_activity_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/person_activity_name"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus android:layout_width="wrap_content" />
+        </EditText>
+
+        <TextView
+            android:id="@+id/person_activity_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/person_activity_name"
+            android:layout_marginTop="52dp"
+            android:text="@string/person_activity_adress"
+            android:textColor="#0000ef"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/person_activity_edittext_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/person_activity_adress"
+            android:layout_alignBottom="@+id/person_activity_adress"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/person_activity_adress"
+            android:ems="10"
+            android:inputType="textPostalAddress" />
+
+        <TextView
+            android:id="@+id/person_activity_telnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/person_activity_adress"
+            android:layout_marginTop="52dp"
+            android:text="@string/person_activity_telephonenr"
+            android:textColor="#0000ef"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/person_activity_edittext_telnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/person_activity_telnumber"
+            android:layout_alignBottom="@+id/person_activity_telnumber"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/person_activity_telnumber"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/person_activity_button_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/person_activity_edittext_telnumber"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:background="#DDDDDD"
+            android:minHeight="45dp"
+            android:minWidth="100dp"
+            android:text="@string/person_activity_proceed" />
+
+        <ProgressBar
+            android:id="@+id/person_activity_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_activity_button_proceed"
+            android:layout_marginTop="32dp"
+            android:indeterminate="false"
+            android:maxHeight="18dp"
+            android:minHeight="18dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/greenprogress" />
+
+        <TextView
+            android:id="@+id/person_activity_textview_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_activity_button_proceed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="@string/person_activity_progress"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+</ScrollView>

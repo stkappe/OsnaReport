@@ -1,0 +1,136 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="#f0f0f0"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/adress_activity_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/adress_activity_step"
+            android:textColor="#0000ef"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/adress_activity_explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/adress_activity_step"
+            android:layout_below="@+id/adress_activity_step"
+            android:text="@string/adress_activity_explanation"
+            android:textColor="#0000ef"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/adress_activity_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/adress_activity_explanation"
+            android:layout_below="@+id/adress_activity_explanation"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/adress_activity_adress"
+            android:textColor="#0000ef"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/adress_activity_edittext_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/adress_activity_adress"
+            android:layout_alignBottom="@+id/adress_activity_adress"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/adress_activity_adress"
+            android:ems="10"
+            android:inputType="textPostalAddress" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/adress_activity_citypart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/adress_activity_adress"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="52dp"
+            android:text="@string/adress_activity_citypart"
+            android:textColor="#0000ef"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/adress_activity_edittext_citypart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/adress_activity_citypart"
+            android:layout_alignBottom="@+id/adress_activity_citypart"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/adress_activity_citypart"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/adress_activity_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/adress_activity_citypart"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="52dp"
+            android:text="@string/adress_activity_comment"
+            android:textColor="#0000ef"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/adress_activity_edittext_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/adress_activity_comment"
+            android:layout_alignBottom="@+id/adress_activity_comment"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/adress_activity_comment"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect" >
+        </EditText>
+
+        <ProgressBar
+            android:id="@+id/adress_activity_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adress_activity_comment"
+            android:layout_marginTop="35dp"
+            android:indeterminate="false"
+            android:maxHeight="18dip"
+            android:minHeight="18dip"
+            android:progress="33"
+            android:progressDrawable="@drawable/greenprogress" />
+
+        <TextView
+            android:id="@+id/adress_activity_textview_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adress_activity_comment"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="35dp"
+            android:text="@string/adress_activity_progress"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+</ScrollView>
